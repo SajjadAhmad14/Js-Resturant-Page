@@ -5,9 +5,10 @@ body {
   margin: 0;
 }
 
-nav .nav-bar {
+.nav-tabs {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   color: #fff;
   font-weight: bolder;
@@ -16,12 +17,29 @@ nav .nav-bar {
   margin: 0;
 }
 
-.nav-bar a {
+.nav-tabs .nav-btn {
+  background-color: transparent;
+  cursor:pointer;
   color: #fff;
-  text-decoration: none;
+  border: none;
+  font-weight: bolder;
+  outline: none;
   padding: 10px;
 }
 
-.nav-bar li {
-  list-style-type: none;
+.nav-tabs .nav-btn:hover{
+  background-color: #008000;
+}
+
+.nav-btn-active {
+  font-weight: bolder;
+  background-color: #808080;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content-active {
+  display: block;
 }
