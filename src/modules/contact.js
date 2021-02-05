@@ -1,10 +1,13 @@
-function contactUs() {
-  const content = document.getElementById('content');
-  const div = document.createElement('div');
-  div.innerHTML = 'I am a contact page';
-  div.classList.add('tab-content');
-  div.classList.add('tab-content-active');
-  div.setAttribute('data-tab', '3');
-  content.appendChild(div);
-}
-export { contactUs };
+const contactUs = (() => {
+  const addContact = () => {
+    const div = document.createElement('div');
+    div.innerHTML = 'I am a contact page';
+    return div
+  };
+  const seeContact = () => {
+    const contact = document.getElementById('contact');
+    contact.classList.add('class', 'active');
+  };
+  return { seeContact, addContact };
+})();
+export default contactUs;
