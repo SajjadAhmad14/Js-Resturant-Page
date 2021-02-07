@@ -1,8 +1,10 @@
 const Home = ( () => {
   const addHomePage = () => {
-    const div = document.createElement('div');
-    div.innerHTML = 'I am a home page';
-    return div
+    const h1 = document.createElement('h1');
+    h1.setAttribute('id','home-content');
+    h1.innerHTML = 'I am a home page';
+    const container = document.getElementsByClassName('content-container')[0]
+    container.appendChild(h1);
   }
   return { addHomePage };
 })();

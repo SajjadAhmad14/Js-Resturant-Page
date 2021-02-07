@@ -1,13 +1,12 @@
-const contactUs = (() => {
+const Contact = (() => {
   const addContact = () => {
-    const div = document.createElement('div');
-    div.innerHTML = 'I am a contact page';
-    return div
+    const h1 = document.createElement('h1');
+    h1.innerHTML = 'I am a contact page';
+    h1.setAttribute('id','contact-content');
+    const content = document.getElementById('content');
+    const container = document.getElementsByClassName('content-container')[0]
+    container.appendChild(h1);
   };
-  const seeContact = () => {
-    const contact = document.getElementById('contact');
-    contact.classList.add('class', 'active');
-  };
-  return { seeContact, addContact };
+  return { addContact };
 })();
-export default contactUs;
+export default Contact;

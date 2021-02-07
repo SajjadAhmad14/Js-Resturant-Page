@@ -2,11 +2,13 @@ body {
   background-image: url(./images/resturant-back.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   margin: 0;
 }
 
-.mtop{
-  margin-top: 50px;
+#content {
+  margin-top: 200px;
+  width: 100%;
 }
 
 .nav-tabs {
@@ -46,4 +48,8 @@ body {
 
 .tab-content-active {
   display: block;
+}
+
+#contact-content, #menu-content, #home-content {
+  color: #000;
 }

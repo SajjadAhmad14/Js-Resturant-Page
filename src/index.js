@@ -1,40 +1,34 @@
-import nav from './modules/nav';
-import contactUs from './modules/contact';
-import menu from './modules/menu';
+import Nav from './modules/nav';
+import Contact from './modules/contact';
+import Menu from './modules/menu';
 import Home  from './modules/home';
-
-const content = document.getElementById('content');
-const container =document.createElement('div');
-container.classList.add('bg-red', 'mtop')
-content.appendChild(container)
-
-const clearContent = () => {
-  container.innerHTML=''
+import Container from './modules/container'
+Nav.addNav();
+Container.addContainer();
+Home.addHomePage();
+const clearTabCotent = () => {
+  const container = document.getElementsByClassName('content-container')[0];
+  if (container.childNodes.length == 1) {
+  container.removeChild(container.lastChild);
+  }
 };
 
 const showContact = () => {
-  clearContent();
-  let contactDiv = contactUs.addContact()
-  console.log(contactDiv);
-  container.appendChild(contactDiv)
+  clearTabCotent();
+  Contact.addContact();
 };
 
 const showMenu = () => {
-  clearContent();
-  menu.addMenu();
+  clearTabCotent();
+  Menu.addMenu();
 };
 
 const showHomePage = () => {
-  clearContent();
-  let homeDiv = Home.addHomePage()
-  console.log(homeDiv);
-  container.appendChild(homeDiv)
- 
+  clearTabCotent();
+  Home.addHomePage();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  nav.addNav();
-  showHomePage();
   const contact = document.getElementById('contact');
   const menu = document.getElementById('menu');
   const home = document.getElementById('home');

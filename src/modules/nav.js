@@ -1,4 +1,4 @@
-const nav = ( () => {
+const Nav = ( () => {
   const addNav = () => {
   const content = document.getElementById('content');
   const childDiv = document.createElement('div');
@@ -22,5 +22,5 @@ const nav = ( () => {
   };
   return { addNav };
 })();
-export default nav;
+export default Nav;
 
