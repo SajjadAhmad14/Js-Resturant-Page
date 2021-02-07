@@ -10,7 +10,7 @@ body {
 }
 
 #content {
-  margin-top: 200px;
+  margin-top: 100px;
   width: 100%;
 }
 
@@ -50,6 +50,7 @@ body {
   text-align: center;
   width: 50%;
   margin: auto;
+  margin-top: 200px;
   padding: 20px;
   border-radius: 5px;
 }
@@ -62,6 +63,7 @@ body {
   cursor: pointer;
   border-radius: 10px;
   color: #fff;
+  margin-top: 20px;
 }
 
 .menu-btn:focus {
@@ -70,4 +72,23 @@ body {
 
 #contact-content, #menu-content, #home-content {
   color: #000;
+}
+
+#menuContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.menu-box {
+  background-color: #b19cd9;
+  width: 290px;
+  height: 250px;
 }
