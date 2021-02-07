@@ -1,3 +1,4 @@
+import 'bootstrap';
 import Nav from './modules/nav';
 import Contact from './modules/contact';
 import Menu from './modules/menu';
