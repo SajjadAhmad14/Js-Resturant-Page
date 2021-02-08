@@ -1,4 +1,3 @@
-import 'bootstrap';
 import Nav from './modules/nav';
 import Contact from './modules/contact';
 import Menu from './modules/menu';
@@ -29,21 +28,16 @@ const showMenu = () => {
 const showHomePage = () => {
   clearTabCotent();
   Home.addHomePage();
-}
-
-const showMenuOnHome = () => {
-  const container = document.getElementsByClassName('content-container')[0];
-  container.replaceChildren();
+  const menuBtn = document.getElementById('show-menu-btn');
+  menuBtn.addEventListener('click', showMenu);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
   const contact = document.getElementById('contact');
-  const menu = document.getElementById('menu');
+  const menu = document.getElementById('menu')
   const home = document.getElementById('home');
-  const showBtn = document.getElementById('show-menu-btn');
   contact.addEventListener('click', showContact);
   menu.addEventListener('click', showMenu);
   home.addEventListener('click', showHomePage);
-  showBtn.addEventListener('click', showMenuOnHome);
 }
 );

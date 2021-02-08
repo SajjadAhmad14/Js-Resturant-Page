@@ -10,6 +10,7 @@ const Nav = ( () => {
   const menu = document.createElement("BUTTON");
   menu.innerHTML = 'Menu';
   menu.setAttribute('id', 'menu');
+  menu.setAttribute('class', 'nav-link');
   menu.classList.add('nav-btn');
   const contact = document.createElement("BUTTON");
   contact.innerHTML = 'Contact Us';
