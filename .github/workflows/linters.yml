@@ -1,36 +1,35 @@
-name: Linters
 
-on: pull_request
-
+name: linters;
+on: pull_request;
 env:
-  FORCE_COLOR: 1
+  force_color: 1
 
-jobs:
+  jobs:
   eslint:
-    name: ESLint
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
-      - name: Setup ESLint
-        run: |
-          npm install --save-dev eslint@6.8.x eslint-config-airbnb-base@14.1.x eslint-plugin-import@2.20.x babel-eslint@10.1.x
-          [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/javascript/.eslintrc.json
-      - name: ESLint Report
-        run: npx eslint .
+  name: eslint
+  runs-on: ubuntu-18.04
+  steps:
+  - uses: actions/checkout@v2
+  - uses: actions/setup-node@v1
+  with:
+  node-version: "12.x"
+  - name: setup eslint
+  run: |
+  npm install --save-dev eslint@6.8.x eslint-config-airbnb-base@14.1.x eslint-plugin-import@2.20.x babel-eslint@10.1.x
+  [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/javascript/.eslintrc.json
+      - name: eslint report
+  run: npx eslint .
   stylelint:
-    name: Stylelint
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
-      - name: Setup Stylelint
-        run: |
-          npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator
-          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/javascript/.stylelintrc.json
-      - name: Stylelint Report
-        run: npx stylelint "**/*.{css,scss}"
+  name: stylelint
+  runs-on: ubuntu-18.04
+  steps:
+  - uses: actions/checkout@v2
+  - uses: actions/setup-node@v1
+  with:
+  node-version: "12.x"
+  - name: setup stylelint
+  run: |
+  npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator
+  [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/javascript/.stylelintrc.json
+      - name: stylelint report
+  run: npx stylelint ;

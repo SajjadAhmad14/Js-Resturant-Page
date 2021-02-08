@@ -4,7 +4,7 @@ const Container = (() => {
     div.setAttribute('class', 'content-container');
     const content = document.getElementById('content');
     content.appendChild(div);
-  }
-  return { addContainer }
+  };
+  return { addContainer };
 })();
 export default Container;
