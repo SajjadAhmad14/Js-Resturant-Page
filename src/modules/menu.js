@@ -27,10 +27,10 @@ const Menu = (() => {
     <div class = 'menu-box'><h3>Salads</h3>
     <button class = 'order-btn'>Order now</button>
     </div>
-    `
-    const container = document.getElementsByClassName('content-container')[0]
+    `;
+    const container = document.getElementsByClassName('content-container')[0];
     container.appendChild(menuContainer);
   };
   return { addMenu };
 })();
-export default Menu ;
+export default Menu;
