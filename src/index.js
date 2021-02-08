@@ -3,10 +3,12 @@ import Nav from './modules/nav';
 import Contact from './modules/contact';
 import Menu from './modules/menu';
 import Home  from './modules/home';
-import Container from './modules/container'
+import Container from './modules/container';
+import Footer from './modules/footer';
 Nav.addNav();
 Container.addContainer();
 Home.addHomePage();
+Footer.addFooter();
 const clearTabCotent = () => {
   const container = document.getElementsByClassName('content-container')[0];
   if (container.childNodes.length == 1) {

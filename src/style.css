@@ -15,8 +15,6 @@ body {
 }
 
 .nav-tabs {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 22px;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,6 +30,8 @@ body {
 }
 
 .nav-tabs .nav-btn {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22px;
   background-color: transparent;
   cursor:pointer;
   color: #000;
@@ -89,6 +89,42 @@ body {
 
 .menu-box {
   background-color: #b19cd9;
-  width: 290px;
-  height: 250px;
+  color: #fd7e14;
+  width: 280px;
+  height: 230px;
+  background-image: url(./images/restaurant-menu.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #b19cd9;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #fff;
+  font-size: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .icons {
+  margin: 10px;
 }
