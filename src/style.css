@@ -46,7 +46,7 @@ body {
   background-color: orange;
 }
 
-#homeContainer {
+#homeContainer, #contactContainer {
   background-color: #fff;
   text-align: center;
   width: 50%;
@@ -54,6 +54,10 @@ body {
   margin-top: 200px;
   padding: 20px;
   border-radius: 5px;
+}
+
+#contactContainer div {
+  font-size: 22px;
 }
 
 .menu-btn, .order-btn {
@@ -74,10 +78,6 @@ body {
   outline: none;
 }
 
-#contact-content, #menu-content, #home-content {
-  color: #000;
-}
-
 #menuContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -95,7 +95,7 @@ body {
   background-color: #b19cd9;
   color: #fff;
   width: 313px;
-  height: 210px;
+  height: 220px;
   background-image: url(./images/restaurant-menu.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -130,6 +130,7 @@ footer a {
 
 footer a:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 footer .icons {

@@ -1,11 +1,14 @@
 const Contact = (() => {
   const addContact = () => {
-    const h1 = document.createElement('h1');
-    h1.innerHTML = 'I am a contact page';
-    h1.setAttribute('id','contact-content');
-    const content = document.getElementById('content');
-    const container = document.getElementsByClassName('content-container')[0]
-    container.appendChild(h1);
+    const contactContainer = document.createElement('div');
+    contactContainer.setAttribute('id', 'contactContainer');
+    contactContainer.innerHTML = `
+    <h1>Contact Us:</h1>
+    <div>Phone: +9299200000000</div>
+    <div>Email: contact@greenvalley.com</div>
+    `;
+    const container = document.getElementsByClassName('content-container')[0];
+    container.appendChild(contactContainer);
   };
   return { addContact };
 })();

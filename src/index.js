@@ -31,12 +31,19 @@ const showHomePage = () => {
   Home.addHomePage();
 }
 
+const showMenuOnHome = () => {
+  const container = document.getElementsByClassName('content-container')[0];
+  container.replaceChildren();
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   const contact = document.getElementById('contact');
   const menu = document.getElementById('menu');
   const home = document.getElementById('home');
+  const showBtn = document.getElementById('show-menu-btn');
   contact.addEventListener('click', showContact);
   menu.addEventListener('click', showMenu);
   home.addEventListener('click', showHomePage);
+  showBtn.addEventListener('click', showMenuOnHome);
 }
 );
