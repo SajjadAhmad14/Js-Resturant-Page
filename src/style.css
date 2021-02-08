@@ -15,6 +15,7 @@ body {
 }
 
 .nav-tabs {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -55,7 +56,7 @@ body {
   border-radius: 5px;
 }
 
-.menu-btn {
+.menu-btn, .order-btn {
   background-color: #fd7e14;
   border-color: #fd7e14;
   font-size: 30px;
@@ -63,10 +64,13 @@ body {
   cursor: pointer;
   border-radius: 10px;
   color: #fff;
+}
+
+.menu-btn {
   margin-top: 20px;
 }
 
-.menu-btn:focus {
+.menu-btn:focus, .order-btn:focus {
   outline: none;
 }
 
@@ -78,7 +82,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  column-gap: 20px;
+  column-gap: 5px;
   row-gap: 20px;
   width: 100%;
   align-items: center;
@@ -89,19 +93,22 @@ body {
 
 .menu-box {
   background-color: #b19cd9;
-  color: #fd7e14;
-  width: 280px;
-  height: 230px;
+  color: #fff;
+  width: 313px;
+  height: 210px;
   background-image: url(./images/restaurant-menu.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 2px solid #b19cd9;
+  border: 3px solid #b19cd9;
   text-align: center;
-  padding-top: 50px;
   font-size: 40px;
   font-weight: bold;
   opacity: 0.9;
+}
+
+.menu-box h3 {
+  background-color: purple;
 }
 
 footer {
@@ -114,7 +121,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 15px;
+  padding: 10px;
 }
 
 footer a {
