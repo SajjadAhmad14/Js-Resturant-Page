@@ -1,3 +1,6 @@
+import './images/menu.jpg';
+import './images/resturant.jpg';
+import './style.css';
 import Nav from './modules/nav';
 import Contact from './modules/contact';
 import Menu from './modules/menu';

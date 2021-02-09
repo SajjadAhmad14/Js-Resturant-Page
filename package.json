@@ -4,7 +4,6 @@
   "description": "A Restaurant Website Purely Built With JavaScript.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "repository": {
@@ -20,9 +19,11 @@
   "homepage": "https://github.com/SajjadAhmad14/Js-Resturant-Page#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "css-loader": "^5.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "style-loader": "^2.0.0",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.9.0",
