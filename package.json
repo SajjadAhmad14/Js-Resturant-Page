@@ -4,7 +4,10 @@
   "description": "A Restaurant Website Purely Built With JavaScript.",
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+
   },
   "repository": {
     "type": "git",
