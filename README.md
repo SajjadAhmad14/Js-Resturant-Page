@@ -26,7 +26,9 @@ Run `npm install`<br>
 - Webpack
 - HTML
 - CSS
+- Font Awsome 
 - VScode
+- Netlify
 
 ## Live Demo
 
