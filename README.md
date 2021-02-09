@@ -25,6 +25,7 @@ Run `npm install`<br>
 - Javascript
 - Webpack
 - HTML
+- CSS
 - VScode
 
 ## Live Demo
